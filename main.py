@@ -18,7 +18,7 @@ def about():
 @app.route("/",methods=['POST']) 
 def predict():
     if request.method == 'POST':
-        return render_template('index.html')
+        return render_template('results.html',prediction = [1],comment = "asd")
   
    
 
