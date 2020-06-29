@@ -7,8 +7,8 @@ from flask_cors import CORS,cross_origin
 app = Flask(__name__)
 
 
-learn = load_learner(path='./Model', file='trained_model.pkl')
-classes = learn.data.classes
+#learn = load_learner(path='./Model', file='trained_model.pkl')
+#classes = learn.data.classes
 
 def predict_single(img_file):
    'function to take image and return prediction'
