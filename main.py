@@ -17,6 +17,10 @@ def about():
  
 @app.route("/predict")
 def predict():
+    if request.method == 'POST': 
+		  
+    #my_prediction = predict_single(request.files['image'])
+	   return render_template('results.html',prediction = "hi",comment = "Ahffan")
     return()
    
 
