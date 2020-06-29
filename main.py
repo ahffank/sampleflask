@@ -19,7 +19,7 @@ def about():
 
 def predict():
     if request.method == 'POST':
-        return render_template('results.html',prediction = "hi",comment = "Ahffan")
+        return render_template('results.html')
   
    
 
