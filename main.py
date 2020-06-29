@@ -15,8 +15,7 @@ def docs():
 def about():
     return render_template("index.html", title="about page")
  
-@app.route("/predict") 
-
+@app.route("/") 
 def predict():
     if request.method == 'POST':
         return render_template('results.html')
