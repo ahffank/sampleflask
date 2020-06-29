@@ -15,13 +15,12 @@ def docs():
 def about():
     return render_template("index.html", title="about page")
  
-@app.route("/predict")
+@app.route("/predict") 
+
 def predict():
-    if request.method == 'POST': 
-		  
-    #my_prediction = predict_single(request.files['image'])
-	   return render_template('results.html',prediction = "hi",comment = "Ahffan")
-    return()
+    if request.method == 'POST':
+        return render_template('results.html',prediction = "hi",comment = "Ahffan")
+  
    
 
 if __name__ == "__main__":
