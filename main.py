@@ -14,6 +14,11 @@ def docs():
 @app.route("/about")
 def about():
     return render_template("index.html", title="about page")
+ 
+@app.route("/predict")
+def predict():
+    return()
+   
 
 if __name__ == "__main__":
     app.run(debug=True)
