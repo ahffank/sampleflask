@@ -1,3 +1,5 @@
 Flask
+fastai
 gunicorn 
+torch
 flask_cors
